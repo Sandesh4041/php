@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+</head>
+
+<body>
+    <h1>Nepali Product</h1>
+    <fieldset>
+        <legend style="color:blue;
+        text-align: center;
+        ">Product Name</legend>
+        <form action="process.php" style="
+    border:2px solid black;
+    width:30%;
+    " method="POST" >
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required><br><br>
+
+            <!-- <label for="productDescription">Product Description:</label>
+        <textarea id="productDescription" name="productDescription" required></textarea><br><br> -->
+        
+        <label for="productPrice">Product Price:</label>
+        <input type="number" id="productPrice" name="productPrice" required><br><br>
+        
+                    <label for="productQuantity">Product Quantity:</label>
+                    <input type="number" id="productQuantity" name="productQuantity" required><br><br>
+
+            <!-- <label for="productImage">Product Image:</label>
+            <input type="file" id="productImage" name="productImage" required><br><br> -->
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel">
+        </form>
+    </fieldset>
+</body>
+
+</html>
