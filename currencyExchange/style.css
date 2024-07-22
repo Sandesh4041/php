@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #11b031;
+}
+.wrapper{
+    width: 390px;
+    height: 320px;
+    padding: 30px;
+    border-radius: 7px;
+    background-color: #ffff;
+}
+
+.wrapper header{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapper form{
+    margin: 40px 0 20px 0;
+}
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border: none;
+}
+form p{
+  font-size: 18px;  
+  margin-bottom: 5px;
+}
+
+form input{
+    height: 50px ;
+    font-size: 17px;
+    padding: 0 auto;
+    border: 1px solid #999;
+}
+
+form input:focus{
+    padding: 0 auto;
+    border: 2px solid #2f6c07;
+
+}
+button{
+    height: 20px;
+    margin-top: 10px;
+}
+form .droplist{
+    display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.droplist .selectbox{
+    display: flex;
+
+    height: 43px;
+    width: 115px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.selectbox select{
+    cursor: pointer;
+    width: auto;
+    font-size: 15px;
+  margin: 0 -5px 0 5px;
+
+}
+
+/* watch this on gpt  */
+.selectbox select::-webkit-file-upload-button{
+    width: 8px;
+
+}
+
+.selectbox select::-webkit-scrollbar-track{
+    background-color: #92af1f;
+
+}
+
+.selectbox select::-webkit-scrollbar-thumb{
+    background-color: #888;
+    border-radius: 8px;
+    border-right: 2px solid #fff;
+}
+
+.selectbox img{
+  
+    max-width: 22px;
+}
+
+.exchangerate{
+    margin-top: 4px;
+}
+.droplist .icon{
+ 
+    font-size: 22px;
+    margin-top: 22px;
+}
+form .exchangerate{
+    font-size: 17px;
+    margin-bottom: 22px;
+}
+form button{
+    cursor: pointer;
+  height:45px;
+  color: #ffff;
+  background: #675AFE;
+  
+}

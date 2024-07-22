@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/favicon.ico">
+    <script src="countrys.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>Currency Converter</header>
+        <form action="#">
+            <div class="amount">
+                <p>Enter the Amount</p>
+                <input type="text" id="amountInput" value="1">
+            </div>
+            <div class="droplist">
+                <div class="from">
+                   <p>From</p> 
+                   <div class="selectbox">
+                    <img id="from-flag" src="https://flagsapi.com/US/flat/64.png" alt="flag" >
+                    <select id="from-currency">
+                        <!-- Options will be populated dynamically -->
+                    </select>
+                   </div>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <div class="to">
+                    <p>To</p> 
+                    <div class="selectbox">
+                     <img id="to-flag" src="https://flagsapi.com/NP/flat/64.png" alt="flag" >
+                     <select id="to-currency">
+                         <!-- Options will be populated dynamically -->
+                     </select>
+                    </div>
+                </div>
+            </div>
+            <div class="exchangerate">
+                1 USD = 118.16 NPR 
+            </div>
+            <button id="getExchangeRateBtn" type="button">Get Exchange Rate</button>
+        </form>
+    </div>
+</body>
+</html>
